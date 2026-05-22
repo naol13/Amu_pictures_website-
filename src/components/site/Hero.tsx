@@ -54,8 +54,8 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-ivory/75 md:text-lg"
         >
-          From sacred Habesha weddings to graduation tears of joy — we preserve the
-          heartbeat of Ethiopian life through cinematic photography and film.
+          From sacred Habesha weddings to graduation tears of joy — we preserve the heartbeat of
+          Ethiopian life through cinematic photography and film.
         </motion.p>
 
         <motion.div
@@ -64,11 +64,17 @@ export function Hero() {
           transition={{ duration: 1, delay: 1.05 }}
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
-          <a href="#booking" className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground shadow-[var(--shadow-gold)] transition-transform hover:scale-[1.03]">
+          <a
+            href="#booking"
+            className="group inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground shadow-[var(--shadow-gold)] transition-transform hover:scale-[1.03]"
+          >
             Book Now
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </a>
-          <a href="#portfolio" className="inline-flex items-center gap-2 rounded-full glass px-8 py-4 text-sm font-medium text-ivory transition-colors hover:text-primary">
+          <a
+            href="#portfolio"
+            className="inline-flex items-center gap-2 rounded-full glass px-8 py-4 text-sm font-medium text-ivory transition-colors hover:text-primary"
+          >
             View Our Work
           </a>
         </motion.div>
@@ -87,7 +93,9 @@ export function Hero() {
           ].map((s) => (
             <div key={s.l} className="text-center">
               <div className="font-display text-2xl text-gradient-gold md:text-4xl">{s.n}</div>
-              <div className="mt-1 text-[10px] uppercase tracking-[0.2em] text-ivory/60 md:text-xs">{s.l}</div>
+              <div className="mt-1 text-[10px] uppercase tracking-[0.2em] text-ivory/60 md:text-xs">
+                {s.l}
+              </div>
             </div>
           ))}
         </motion.div>

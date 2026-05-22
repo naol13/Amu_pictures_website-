@@ -1,17 +1,47 @@
 import { motion } from "framer-motion";
-import {
-  Camera, Film, GraduationCap, Cake, Plane, Shirt, Music, Sparkles,
-} from "lucide-react";
+import { Camera, Film, GraduationCap, Cake, Plane, Shirt, Music, Sparkles } from "lucide-react";
 
 const services = [
-  { icon: Camera, title: "Habesha Wedding Photography", desc: "Sacred moments of the Mels and traditional ceremony, captured with reverence." },
-  { icon: Film, title: "Cinematic Wedding Films", desc: "Feature-length wedding films scored to the rhythm of your love story." },
-  { icon: GraduationCap, title: "Graduation Shoots", desc: "Celebrate the achievement — cap, gown, family, and pride in golden light." },
-  { icon: Cake, title: "Birthday & Family Events", desc: "Intimate family gatherings, milestones, and the everyday joys worth keeping." },
-  { icon: Plane, title: "Drone Videography", desc: "Aerial cinematography that puts your celebration on an epic, sweeping scale." },
-  { icon: Shirt, title: "Traditional Clothing Shoots", desc: "Editorial portraits honoring kemis, netela, and the artistry of Ethiopian dress." },
-  { icon: Music, title: "Music Video Production", desc: "Full creative direction for Ethiopian artists — concept to color grade." },
-  { icon: Sparkles, title: "Photo & Video Editing", desc: "Cinematic color, retouching, and Ethiopian-inspired audio mastering." },
+  {
+    icon: Camera,
+    title: "Habesha Wedding Photography",
+    desc: "Sacred moments of the Mels and traditional ceremony, captured with reverence.",
+  },
+  {
+    icon: Film,
+    title: "Cinematic Wedding Films",
+    desc: "Feature-length wedding films scored to the rhythm of your love story.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Graduation Shoots",
+    desc: "Celebrate the achievement — cap, gown, family, and pride in golden light.",
+  },
+  {
+    icon: Cake,
+    title: "Birthday & Family Events",
+    desc: "Intimate family gatherings, milestones, and the everyday joys worth keeping.",
+  },
+  {
+    icon: Plane,
+    title: "Drone Videography",
+    desc: "Aerial cinematography that puts your celebration on an epic, sweeping scale.",
+  },
+  {
+    icon: Shirt,
+    title: "Traditional Clothing Shoots",
+    desc: "Editorial portraits honoring kemis, netela, and the artistry of Ethiopian dress.",
+  },
+  {
+    icon: Music,
+    title: "Music Video Production",
+    desc: "Full creative direction for Ethiopian artists — concept to color grade.",
+  },
+  {
+    icon: Sparkles,
+    title: "Photo & Video Editing",
+    desc: "Cinematic color, retouching, and Ethiopian-inspired audio mastering.",
+  },
 ];
 
 export function Services() {

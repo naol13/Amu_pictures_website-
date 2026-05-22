@@ -25,7 +25,9 @@ export function About() {
           </div>
           <div className="absolute -bottom-6 -right-6 hidden rounded-2xl glass-gold p-6 md:block">
             <div className="font-display text-3xl text-gradient-gold">Since 2017</div>
-            <div className="text-xs uppercase tracking-[0.2em] text-ivory/70">Addis Ababa · Ethiopia</div>
+            <div className="text-xs uppercase tracking-[0.2em] text-ivory/70">
+              Addis Ababa · Ethiopia
+            </div>
           </div>
         </motion.div>
 
@@ -42,29 +44,26 @@ export function About() {
           </h2>
           <div className="habesha-divider my-8 max-w-xs" />
           <p className="text-ivory/75 leading-relaxed">
-            Amu Pictures was born from a single belief: every Ethiopian moment — from the
-            quiet blessing at a kebero-lit wedding to the joyful tears of a graduation —
-            deserves to be remembered the way it truly felt.
+            Amu Pictures was born from a single belief: every Ethiopian moment — from the quiet
+            blessing at a kebero-lit wedding to the joyful tears of a graduation — deserves to be
+            remembered the way it truly felt.
           </p>
           <p className="mt-4 text-ivory/75 leading-relaxed">
-            We blend modern cinematic storytelling with deep respect for Habesha
-            tradition. Whether it's an Orthodox church ceremony, a family birthday in
-            Bole, or the spin of a colorful tilet at the reception — our lens is there,
-            patient and unhurried, honoring the story as it unfolds.
+            We blend modern cinematic storytelling with deep respect for Habesha tradition. Whether
+            it's an Orthodox church ceremony, a family birthday in Bole, or the spin of a colorful
+            tilet at the reception — our lens is there, patient and unhurried, honoring the story as
+            it unfolds.
           </p>
 
           <div className="mt-10 grid grid-cols-2 gap-4">
-            {[
-              "Habesha Weddings",
-              "Graduation Films",
-              "Church Ceremonies",
-              "Cultural Events",
-            ].map((t) => (
-              <div key={t} className="glass rounded-xl px-4 py-3 text-sm text-ivory/85">
-                <span className="mr-2 text-primary">◆</span>
-                {t}
-              </div>
-            ))}
+            {["Habesha Weddings", "Graduation Films", "Church Ceremonies", "Cultural Events"].map(
+              (t) => (
+                <div key={t} className="glass rounded-xl px-4 py-3 text-sm text-ivory/85">
+                  <span className="mr-2 text-primary">◆</span>
+                  {t}
+                </div>
+              ),
+            )}
           </div>
         </motion.div>
       </div>

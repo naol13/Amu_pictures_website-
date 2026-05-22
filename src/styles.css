@@ -1,6 +1,9 @@
-@import "tailwindcss" source(none);
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -56,7 +59,7 @@
   --popover: oklch(0.15 0.025 40);
   --popover-foreground: oklch(0.97 0.015 80);
 
-  --primary: oklch(0.78 0.14 78);            /* Ethiopian gold */
+  --primary: oklch(0.78 0.14 78); /* Ethiopian gold */
   --primary-foreground: oklch(0.13 0.02 40);
 
   --secondary: oklch(0.22 0.03 40);
@@ -65,7 +68,7 @@
   --muted: oklch(0.2 0.025 40);
   --muted-foreground: oklch(0.72 0.02 80);
 
-  --accent: oklch(0.55 0.16 145);            /* Ethiopian green */
+  --accent: oklch(0.55 0.16 145); /* Ethiopian green */
   --accent-foreground: oklch(0.97 0.015 80);
 
   --destructive: oklch(0.55 0.21 27);
@@ -83,9 +86,13 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
+  * {
+    border-color: var(--color-border);
+  }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     background-color: var(--color-background);
@@ -96,7 +103,10 @@
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
@@ -104,7 +114,12 @@
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, oklch(0.92 0.13 88), oklch(0.74 0.16 70), oklch(0.92 0.13 88));
+    background: linear-gradient(
+      135deg,
+      oklch(0.92 0.13 88),
+      oklch(0.74 0.16 70),
+      oklch(0.92 0.13 88)
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -140,7 +155,7 @@
   .pattern-overlay {
     position: absolute;
     inset: 0;
-    background-image: url('/src/assets/habesha-pattern.jpg');
+    background-image: url("/src/assets/habesha-pattern.jpg");
     background-size: 360px;
     opacity: 0.05;
     mix-blend-mode: screen;
@@ -148,12 +163,14 @@
   }
 
   .cinematic-overlay {
-    background: linear-gradient(180deg,
+    background: linear-gradient(
+      180deg,
       oklch(0.13 0.02 40 / 0.4) 0%,
       oklch(0.13 0.02 40 / 0.55) 50%,
-      oklch(0.13 0.02 40 / 0.95) 100%);
+      oklch(0.13 0.02 40 / 0.95) 100%
+    );
   }
 }
 
-/* Elegant cinematic fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+

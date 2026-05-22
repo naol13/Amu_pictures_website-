@@ -29,34 +29,49 @@ export function Nav() {
         scrolled ? "py-3" : "py-6"
       }`}
     >
-      <div className={`mx-auto flex max-w-7xl items-center justify-between px-6 ${scrolled ? "glass rounded-full mx-4 md:mx-auto md:max-w-6xl px-6 py-3" : ""}`}>
+      <div
+        className={`mx-auto flex max-w-7xl items-center justify-between px-6 ${scrolled ? "glass rounded-full mx-4 md:mx-auto md:max-w-6xl px-6 py-3" : ""}`}
+      >
         <a href="#top" className="group flex items-center gap-3">
           <div className="grid h-10 w-10 place-items-center rounded-full glass-gold">
             <span className="font-display text-xl text-gradient-gold">A</span>
           </div>
           <div className="leading-tight">
             <div className="font-display text-lg tracking-wide text-ivory">Amu Pictures</div>
-            <div className="text-[10px] uppercase tracking-[0.3em] text-primary/80">Ethiopian Stories</div>
+            <div className="text-[10px] uppercase tracking-[0.3em] text-primary/80">
+              Ethiopian Stories
+            </div>
           </div>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-ivory/80 transition-colors hover:text-primary">
+            <a
+              key={l.href}
+              href={l.href}
+              className="text-sm text-ivory/80 transition-colors hover:text-primary"
+            >
               {l.label}
             </a>
           ))}
         </nav>
 
-        <a href="#booking" className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-all hover:shadow-[var(--shadow-gold)] md:inline-flex">
+        <a
+          href="#booking"
+          className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-all hover:shadow-[var(--shadow-gold)] md:inline-flex"
+        >
           Book a Session
         </a>
 
         <button onClick={() => setOpen(!open)} className="md:hidden text-ivory" aria-label="menu">
           <div className="space-y-1.5">
-            <span className={`block h-0.5 w-6 bg-current transition ${open ? "translate-y-2 rotate-45" : ""}`} />
+            <span
+              className={`block h-0.5 w-6 bg-current transition ${open ? "translate-y-2 rotate-45" : ""}`}
+            />
             <span className={`block h-0.5 w-6 bg-current transition ${open ? "opacity-0" : ""}`} />
-            <span className={`block h-0.5 w-6 bg-current transition ${open ? "-translate-y-2 -rotate-45" : ""}`} />
+            <span
+              className={`block h-0.5 w-6 bg-current transition ${open ? "-translate-y-2 -rotate-45" : ""}`}
+            />
           </div>
         </button>
       </div>
@@ -69,11 +84,20 @@ export function Nav() {
         >
           <div className="flex flex-col gap-4">
             {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-ivory/90">
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="text-ivory/90"
+              >
                 {l.label}
               </a>
             ))}
-            <a href="#booking" onClick={() => setOpen(false)} className="rounded-full bg-primary px-5 py-3 text-center text-sm font-medium text-primary-foreground">
+            <a
+              href="#booking"
+              onClick={() => setOpen(false)}
+              className="rounded-full bg-primary px-5 py-3 text-center text-sm font-medium text-primary-foreground"
+            >
               Book a Session
             </a>
           </div>

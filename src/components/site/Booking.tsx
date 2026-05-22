@@ -45,12 +45,17 @@ export function Booking() {
             Book your <span className="italic text-gradient-gold">unforgettable</span> day
           </h2>
           <p className="mt-5 text-ivory/70 leading-relaxed">
-            Tell us a little about your event. We'll respond personally within 24 hours
-            with availability, pricing, and a custom plan crafted for your story.
+            Tell us a little about your event. We'll respond personally within 24 hours with
+            availability, pricing, and a custom plan crafted for your story.
           </p>
 
           <div className="mt-10 space-y-3">
-            <a href="https://t.me/amupictures" target="_blank" rel="noopener" className="group flex items-center gap-4 rounded-2xl glass p-4 transition-all hover:border-primary/40">
+            <a
+              href="https://t.me/amupictures"
+              target="_blank"
+              rel="noopener"
+              className="group flex items-center gap-4 rounded-2xl glass p-4 transition-all hover:border-primary/40"
+            >
               <div className="grid h-12 w-12 place-items-center rounded-xl glass-gold">
                 <Send className="h-5 w-5 text-primary" />
               </div>
@@ -58,10 +63,17 @@ export function Booking() {
                 <div className="text-xs uppercase tracking-[0.2em] text-primary/70">Telegram</div>
                 <div className="font-medium text-ivory">@amupictures</div>
               </div>
-              <span className="text-ivory/40 transition-transform group-hover:translate-x-1">→</span>
+              <span className="text-ivory/40 transition-transform group-hover:translate-x-1">
+                →
+              </span>
             </a>
 
-            <a href="https://wa.me/251900000000" target="_blank" rel="noopener" className="group flex items-center gap-4 rounded-2xl glass p-4 transition-all hover:border-primary/40">
+            <a
+              href="https://wa.me/251900000000"
+              target="_blank"
+              rel="noopener"
+              className="group flex items-center gap-4 rounded-2xl glass p-4 transition-all hover:border-primary/40"
+            >
               <div className="grid h-12 w-12 place-items-center rounded-xl glass-gold">
                 <MessageCircle className="h-5 w-5 text-primary" />
               </div>
@@ -69,10 +81,15 @@ export function Booking() {
                 <div className="text-xs uppercase tracking-[0.2em] text-primary/70">WhatsApp</div>
                 <div className="font-medium text-ivory">+251 900 000 000</div>
               </div>
-              <span className="text-ivory/40 transition-transform group-hover:translate-x-1">→</span>
+              <span className="text-ivory/40 transition-transform group-hover:translate-x-1">
+                →
+              </span>
             </a>
 
-            <a href="tel:+251900000000" className="group flex items-center gap-4 rounded-2xl glass p-4 transition-all hover:border-primary/40">
+            <a
+              href="tel:+251900000000"
+              className="group flex items-center gap-4 rounded-2xl glass p-4 transition-all hover:border-primary/40"
+            >
               <div className="grid h-12 w-12 place-items-center rounded-xl glass-gold">
                 <Phone className="h-5 w-5 text-primary" />
               </div>
@@ -80,7 +97,9 @@ export function Booking() {
                 <div className="text-xs uppercase tracking-[0.2em] text-primary/70">Phone Call</div>
                 <div className="font-medium text-ivory">+251 900 000 000</div>
               </div>
-              <span className="text-ivory/40 transition-transform group-hover:translate-x-1">→</span>
+              <span className="text-ivory/40 transition-transform group-hover:translate-x-1">
+                →
+              </span>
             </a>
           </div>
         </motion.div>
@@ -101,10 +120,18 @@ export function Booking() {
 
             <div className="sm:col-span-2">
               <Label>Event Type</Label>
-              <select required name="eventType" className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-ivory outline-none transition-colors focus:border-primary">
-                <option value="" className="bg-background">Select an event…</option>
+              <select
+                required
+                name="eventType"
+                className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-ivory outline-none transition-colors focus:border-primary"
+              >
+                <option value="" className="bg-background">
+                  Select an event…
+                </option>
                 {eventTypes.map((t) => (
-                  <option key={t} value={t} className="bg-background">{t}</option>
+                  <option key={t} value={t} className="bg-background">
+                    {t}
+                  </option>
                 ))}
               </select>
             </div>
@@ -138,7 +165,19 @@ function Label({ children }: { children: React.ReactNode }) {
   return <label className="text-xs uppercase tracking-[0.2em] text-primary/80">{children}</label>;
 }
 
-function Field({ label, name, type = "text", placeholder, required }: { label: string; name: string; type?: string; placeholder?: string; required?: boolean }) {
+function Field({
+  label,
+  name,
+  type = "text",
+  placeholder,
+  required,
+}: {
+  label: string;
+  name: string;
+  type?: string;
+  placeholder?: string;
+  required?: boolean;
+}) {
   return (
     <div>
       <Label>{label}</Label>

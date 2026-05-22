@@ -81,7 +81,10 @@ export function Portfolio() {
             onClick={() => setActive(null)}
             className="fixed inset-0 z-[60] grid place-items-center bg-background/95 backdrop-blur-xl p-6"
           >
-            <button onClick={() => setActive(null)} className="absolute top-6 right-6 rounded-full glass p-3 text-ivory">
+            <button
+              onClick={() => setActive(null)}
+              className="absolute top-6 right-6 rounded-full glass p-3 text-ivory"
+            >
               <X className="h-5 w-5" />
             </button>
             <motion.img
@@ -95,7 +98,9 @@ export function Portfolio() {
               className="max-h-[85vh] max-w-full rounded-2xl object-contain shadow-[var(--shadow-elegant)]"
             />
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center">
-              <div className="text-xs uppercase tracking-[0.3em] text-primary">{items[active].tag}</div>
+              <div className="text-xs uppercase tracking-[0.3em] text-primary">
+                {items[active].tag}
+              </div>
               <div className="mt-1 font-display text-2xl text-ivory">{items[active].label}</div>
             </div>
           </motion.div>

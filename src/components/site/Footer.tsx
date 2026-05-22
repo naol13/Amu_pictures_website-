@@ -13,22 +13,40 @@ export function Footer() {
               </div>
               <div>
                 <div className="font-display text-lg text-ivory">Amu Pictures</div>
-                <div className="text-[10px] uppercase tracking-[0.3em] text-primary/80">Ethiopian Stories</div>
+                <div className="text-[10px] uppercase tracking-[0.3em] text-primary/80">
+                  Ethiopian Stories
+                </div>
               </div>
             </div>
             <p className="mt-5 max-w-sm text-sm text-ivory/60 leading-relaxed">
-              A cinematic Ethiopian photography & videography studio honoring Habesha
-              traditions and modern moments — based in Addis Ababa.
+              A cinematic Ethiopian photography & videography studio honoring Habesha traditions and
+              modern moments — based in Addis Ababa.
             </p>
           </div>
 
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-primary">Studio</div>
             <ul className="mt-5 space-y-2 text-sm text-ivory/70">
-              <li><a href="#about" className="hover:text-primary">About</a></li>
-              <li><a href="#services" className="hover:text-primary">Services</a></li>
-              <li><a href="#portfolio" className="hover:text-primary">Portfolio</a></li>
-              <li><a href="#booking" className="hover:text-primary">Book a session</a></li>
+              <li>
+                <a href="#about" className="hover:text-primary">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-primary">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" className="hover:text-primary">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="#booking" className="hover:text-primary">
+                  Book a session
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -41,7 +59,11 @@ export function Footer() {
                 { I: Send, href: "https://t.me/amupictures" },
                 { I: MessageCircle, href: "https://wa.me/251900000000" },
               ].map(({ I, href }, i) => (
-                <a key={i} href={href} className="grid h-11 w-11 place-items-center rounded-full glass text-ivory/80 transition-colors hover:border-primary/50 hover:text-primary">
+                <a
+                  key={i}
+                  href={href}
+                  className="grid h-11 w-11 place-items-center rounded-full glass text-ivory/80 transition-colors hover:border-primary/50 hover:text-primary"
+                >
                   <I className="h-4 w-4" />
                 </a>
               ))}
